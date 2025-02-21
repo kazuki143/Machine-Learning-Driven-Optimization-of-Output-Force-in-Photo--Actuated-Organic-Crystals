@@ -1,4 +1,4 @@
-# Machine-Learning-Driven-Optimization-of-Output-Force-in-Photo--Actuated-Organic-Crystals
+# Machine　Learning-Driven Optimization of Output Force in Photo-Actuated Organic Crystals
 
 These files contain the machine learning scripts used in "Machine-Learning-Driven-Optimization-of-Output-Force-in-Photo--Actuated-Organic-Crystals". 
 I have uploaded files used for LASSO regression and Bayesian optimization. The command flow for Bayesian optimization is summarized in the figure below. 
