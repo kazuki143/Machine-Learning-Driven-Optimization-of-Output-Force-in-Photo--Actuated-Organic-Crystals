@@ -3,8 +3,8 @@
 These files contain the machine learning scripts used in "Machine Learning-Driven Optimization of Output Force in Photo-Actuated Organic Crystals". 
 I have uploaded files used for LASSO regression and Bayesian optimization. 
 
-In LASSO_regression folder, there are two files.
-`LASSO_regression.ipynb`: File for data loading, pre-processing and LASSO regression
+In LASSO_regression folder, there are two files.\n
+`LASSO_regression.ipynb`: File for data loading, pre-processing and LASSO regression\n
 `Young's_modulus_dataset.xlsx`: Dataset for LASSO regression (This file is the same as "Supplementary Data.xlsx" in "Machine Learning-Driven Optimization of Output Force in Photo-Actuated Organic Crystals".)
 
 In Bayesian_optimization folder, there are several files.
