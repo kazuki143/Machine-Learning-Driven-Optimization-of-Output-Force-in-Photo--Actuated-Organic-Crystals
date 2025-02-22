@@ -26,6 +26,10 @@ There are several files.
 
 `./automation/uv_light_control.py`: Controls the UV light irradiation device
 
+#### 
+To perform Bayesian optimization, simply run the following command:
+`python main_bayesianoptimization.py`
+
 The command flow for Bayesian optimization is summarized in the figure below. 
 ![image](https://github.com/user-attachments/assets/1282f18e-2c1c-4efb-a1d8-63c1281f3459)
 
