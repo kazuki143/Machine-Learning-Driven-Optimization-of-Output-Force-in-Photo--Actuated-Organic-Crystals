@@ -8,18 +8,23 @@ There are two files.
 
 `LASSO_regression.ipynb`: File for data loading, pre-processing and LASSO regression
 
-`Young's_modulus_dataset.xlsx`: Dataset for LASSO regression (This file is the same as "Supplementary Data.xlsx" in "Machine Learning-Driven Optimization of Output Force in Photo-Actuated Organic Crystals".)
+`Young's_modulus_dataset.xlsx`: Dataset for LASSO regression
+(This file is the same as "Supplementary Data.xlsx" in "Machine Learning-Driven Optimization of Output Force in Photo-Actuated Organic Crystals".)
 
 ## Bayesian_optimization folder
 There are several files.
 
-`main_bayesianoptimization.py`: 
+`main_bayesianoptimization.py`: The main script for performing Bayesian optimization
 
-`settings6.py`: 
+`settings6.py`: Input the setting
 
-`utils7.py`: 
+`utils7.py`: Contains functions used for Bayesian optimization
 
 `initial_dataset.xlsx`: Initial data for Bayesian optimization
+
+`automation/stage_control.py`: Controls the movement of the stage holding the slide glass with a fixed crystal
+
+`automation/uv_light_control.py`: Controls the UV light irradiation device
 
 The command flow for Bayesian optimization is summarized in the figure below. 
 ![image](https://github.com/user-attachments/assets/1282f18e-2c1c-4efb-a1d8-63c1281f3459)
