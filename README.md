@@ -16,6 +16,7 @@ Minimum packages we used are following.
 - pyserial==3.5
 - seaborn==0.13.2
 - rdkit==2024.3.5
+- openpyxl==3.1.5
 
 ## LASSO_regression Folder
 `LASSO_regression.ipynb`: File for data loading, pre-processing and LASSO regression
