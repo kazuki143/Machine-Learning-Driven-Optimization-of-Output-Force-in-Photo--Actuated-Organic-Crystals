@@ -7,15 +7,15 @@ I have uploaded files used for LASSO regression and Bayesian optimization.
 We implemented the codes on Python 3.9 in a computer of Windows 11.
 Minimum packages we used are following.
 
-・numpy==1.26.0
-・pandas==2.1.1
-・matplotlib==3.9.4
-・bayesian-optimization==1.5.1
-・scikit-learn==1.5.1
-・json5==0.9.6
-・pyserial==3.5
-・seaborn==0.13.2
-・rdkit==2024.3.5
+- numpy==1.26.0
+- pandas==2.1.1
+- matplotlib==3.9.4
+- bayesian-optimization==1.5.1
+- scikit-learn==1.5.1
+- json5==0.9.6
+- pyserial==3.5
+- seaborn==0.13.2
+- rdkit==2024.3.5
 
 ## LASSO_regression Folder
 `LASSO_regression.ipynb`: File for data loading, pre-processing and LASSO regression
