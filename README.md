@@ -3,6 +3,12 @@
 These files contain the machine learning scripts used in "Machine Learning-Driven Optimization of Output Force in Photo-Actuated Organic Crystals". 
 I have uploaded files used for LASSO regression and Bayesian optimization. 
 
+## Dependencies
+We implemented the codes on Python 3.9 in a computer of Windows 11.
+Minimum packages we used are following.
+
+・`numpy`==1.26.0
+
 ## LASSO_regression Folder
 `LASSO_regression.ipynb`: File for data loading, pre-processing and LASSO regression
 
