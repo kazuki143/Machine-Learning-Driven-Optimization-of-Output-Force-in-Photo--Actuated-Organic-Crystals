@@ -50,3 +50,6 @@ Additionally, you can watch a recorded video of the actual execution of Bayesian
 
 > ### Output Folder
 `./results/`: After executing main_bayesianoptimization.py, the results are saved in this directory as .json files.
+
+> ### Note
+Since the fabricated crystals are small and fragile, they may break during the experiment. If this occurs, the experiment must be repeated. Due to the difficulty in handling the samples, appropriate judgment by the experimenter is essential. Therefore, steps requiring human clicks and inputs were introduced. 
