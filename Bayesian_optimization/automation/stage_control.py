@@ -3,6 +3,18 @@ import time
 
 # Moving the stage for the experiment
 def control_serial1():
+    """
+    Move the XY stage to a specified position for the experiment.
+
+    Input:
+    --------
+    None
+
+    Returns:
+    --------
+    None
+    """
+
     port = 'COM3'
     baudrate = 9600
     with serial.Serial(port, baudrate, timeout=1) as ser:
@@ -16,6 +28,18 @@ def control_serial1():
 
 # Moving the stage back to its original position after the experiment
 def control_serial2():
+    """
+    Move the XY stage to its original position after the experiment.
+
+    Input:
+    --------
+    None
+
+    Returns:
+    --------
+    None
+    """
+
     port = 'COM3'
     baudrate = 9600
     with serial.Serial(port, baudrate, timeout=1) as ser:

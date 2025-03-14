@@ -3,6 +3,19 @@ import time
 
 # Control of irradiation intensity
 def uv_light_serial(intensity=1,num=1):
+    """
+    Control the irradiation intensity of a UV light source via serial communication.
+
+    Input:
+    --------
+    intensity (int, optional (default=1)): The irradiation intensity is specified as a percentage (0-100%). A value of 100 corresponds to the maximum possible irradiation intensity.
+    num (int, optional (default=1)): The channel number for the UV light source.
+
+    Returns:
+    --------
+    None
+    """
+
     serial_port = "COM5"  # Specify the communication port
     baud_rate = 9600      # Set baud rate
     timeout = 5           # Timeout in seconds
