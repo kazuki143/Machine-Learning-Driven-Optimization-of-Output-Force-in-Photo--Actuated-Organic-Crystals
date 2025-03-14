@@ -56,10 +56,9 @@ The types and meanings of the arguments of settings.py correspond to the followi
 - xi (float): Trade-off parameter for Expected Improvement (EI) and Probability of Improvement (POI).
 
 #### Gaussian Process Kernel:
-------------------------
-kernel (str): Type of Gaussian Process kernel {'rbf', 'matern'}.
-length_scale (float): Length scale for RBF or Matern kernel {0.1, 1, 10, 100}.
-nu (float): Smoothness parameter for the Matern kernel {1, 1.5, 2, 2.5, 3}.
+- kernel (str): Type of Gaussian Process kernel {'rbf', 'matern'}.
+- length_scale (float): Length scale for RBF or Matern kernel {0.1, 1, 10, 100}.
+- nu (float): Smoothness parameter for the Matern kernel {1, 1.5, 2, 2.5, 3}.
 
 #### Search Space:
 - space (dict): Defines the parameter ranges for Bayesian optimization.
