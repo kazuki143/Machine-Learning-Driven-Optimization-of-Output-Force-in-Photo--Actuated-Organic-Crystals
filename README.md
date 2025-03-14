@@ -40,7 +40,7 @@ Minimum packages we used are following.
 > ### Setting arguments
 The types and meanings of the arguments of settings.py correspond to the following, respectively.
 
-#### Run arguments
+Run arguments
 - mode (str): Operation mode, either 'experiment' or 'simulation'.
 - work_name (str): Name of the saved files.
 - repeat (int): Number of repetitions for each experiment.
@@ -50,17 +50,17 @@ The types and meanings of the arguments of settings.py correspond to the followi
 - init_file (str): Filename of the initial dataset.
 - results_folder (str): Directory where results will be stored.
 
-#### Acquisition Function:
+Acquisition Function:
 - acquisition (str): Method for selecting the next evaluation point {'ucb', 'ei', 'poi'}.
 - kappa (float): Trade-off parameter for the Upper Confidence Bound (UCB) method {1, 2.5, 5, 10, 20}.
 - xi (float): Trade-off parameter for Expected Improvement (EI) and Probability of Improvement (POI).
 
-#### Gaussian Process Kernel:
+Gaussian Process Kernel:
 - kernel (str): Type of Gaussian Process kernel {'rbf', 'matern'}.
 - length_scale (float): Length scale for RBF or Matern kernel {0.1, 1, 10, 100}.
 - nu (float): Smoothness parameter for the Matern kernel {1, 1.5, 2, 2.5, 3}.
 
-#### Search Space:
+Search Space:
 - space (dict): Defines the parameter ranges for Bayesian optimization.
     - 'E' (tuple): Young's modulus range (GPa).
     - 'L' (tuple): Crystal length range (μm).
