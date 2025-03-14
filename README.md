@@ -37,7 +37,7 @@ Minimum packages we used are following.
 
 `./automation/uv_light_control.py`: Controls the UV light irradiation device
 
-### Setting arguments
+> ### Setting arguments
 The types and meanings of the arguments of settings.py correspond to the following, respectively.
 
 **Run arguments**
@@ -69,7 +69,7 @@ The types and meanings of the arguments of settings.py correspond to the followi
     - 'W' (tuple): Crystal width range (μm).
 - E_exp (list): List of experimentally measured Young's modulus values from bending tests.
 
-### Execution command
+> ### Execution command
 To perform Bayesian optimization, simply run the following command:
 
 `python main_bayesianoptimization.py`
@@ -80,9 +80,9 @@ The command flow for Bayesian optimization is summarized in the figure below.
 Additionally, you can watch a recorded video of the actual execution of Bayesian optimization at the following video.
 [![image](https://github.com/user-attachments/assets/1b9e5d14-bd44-463f-b919-6564d23ef9a9)](https://youtu.be/iQlV0FbhcLQ)
 
-### Output Folder
+> ### Output Folder
 `./results/`: After executing main_bayesianoptimization.py, the results are saved in this directory as .json files.
 
-### Note
+> ### Note
 - Since the fabricated crystals are small and fragile, they may break during the experiment. If this occurs, the experiment must be repeated. Due to the difficulty in handling the samples, appropriate judgment by the experimenter is essential. Therefore, steps requiring human clicks and inputs were introduced. 
 - We conducted simulations before implementing Bayesian optimization. The results and details are described in the supplementary figure 5. Code up to #303 defines functions necessary for Bayesian optimization and specifies destination files for saving results, making it extremely important code. 
