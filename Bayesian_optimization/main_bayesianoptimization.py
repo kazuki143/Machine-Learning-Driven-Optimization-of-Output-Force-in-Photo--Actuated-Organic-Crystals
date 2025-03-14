@@ -17,7 +17,7 @@ warnings.simplefilter('ignore')
 def main(mode, work_name, space, acquisition, kappa, xi, kernel, length_scale, nu, 
          E_exp=None, init_file=None, n_trial=100, n_trial_P=20, random_state=0, 
          results_folder=None, repeat=None):
-
+    
     # Make a function to be optimized
     start_time = time.time()
     
