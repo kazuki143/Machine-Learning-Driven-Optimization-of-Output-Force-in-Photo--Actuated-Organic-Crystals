@@ -40,7 +40,7 @@ Minimum packages we used are following.
 > ### Setting arguments
 The types and meanings of the arguments of settings.py correspond to the following, respectively.
 
-**Run arguments**
+**Run arguments:**
 - mode (str): Operation mode, either 'experiment' or 'simulation'.
 - work_name (str): Name of the saved files.
 - repeat (int): Number of repetitions for each experiment.
