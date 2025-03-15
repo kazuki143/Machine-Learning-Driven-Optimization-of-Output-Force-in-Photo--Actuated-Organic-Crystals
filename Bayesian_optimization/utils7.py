@@ -175,7 +175,7 @@ class BlackBoxFunc:
 
         Return:
         --------
-        x_rand: A list containing randomly sampled integer values, one for each parameter in `space`.
+        x_rand (list): A list containing randomly sampled integer values, one for each parameter in `space`.
         """
 
         x_rand = []
@@ -194,6 +194,10 @@ class BlackBoxFunc:
         minY (float): The minimum blocking force value.
         results_folder (string): The directory where the JSON file will be saved.
         save_name (string): The base name for the saved JSON file.
+        
+        Return:
+        --------
+        None
         """
 
         save_dic={"max":round(maxY,3),"min":round(minY,3),"mu_E":self.mu_E,"mu_L":self.mu_L,"mu_W":self.mu_W,"mu_T":self.mu_T,"mu_P":self.mu_P}
@@ -296,14 +300,16 @@ def posterior(optimizer, x_obs, y_obs, grid):
     Input:
     --------
     optimizer (object): An instance of an optimizer containing a Gaussian Process (`_gp`).
-    x_obs (): The observed input data points used to update the GP model.
-    y_obs (): The observed output values corresponding to `x_obs`.
-    grid: The set of query points where the posterior mean and standard deviation are computed.
-
+    x_obs (array-like, shape(n_samples, 5)): The observed input data points used to update the GP model.
+    y_obs (array-like, shape(n_samples,)): The observed output values corresponding to `x_obs`.
+    grid (array-like, shape(n_grid_points, 5)): The set of query points where the posterior mean and standard deviation are computed.
+    
     Return:
     --------
-    `mu`: The predicted mean values for `grid`, shape (m_samples,).
-    `sigma`: The predicted standard deviations for `grid`, shape (m_samples,).
+    `mu` (np.ndarray, shape(n_grid_points,)): The predicted mean values for `grid`.
+    `sigma` (np.ndarray, shape(n_grid_points,)): The predicted standard deviations for `grid`.
+    
+    (n_samples: The number of the observed data, n_grid_points: The number of query points for evaluation)
     """
 
     # optimizer._gp.fit(x_obs, y_obs)
@@ -441,7 +447,7 @@ def readjson(path):
     --------
     res (list):  A list of parsed JSON objects, where each element corresponds to a line in the file.
     """
-    
+
     res = []
     decoder = json.JSONDecoder()
     with open(path, 'r') as f:
