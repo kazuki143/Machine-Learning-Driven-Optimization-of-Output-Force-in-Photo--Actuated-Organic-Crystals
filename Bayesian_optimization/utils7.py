@@ -306,8 +306,8 @@ def posterior(optimizer, x_obs, y_obs, grid):
     
     Return:
     --------
-    `mu` (np.ndarray, shape(n_grid_points,)): The predicted mean values for `grid`.
-    `sigma` (np.ndarray, shape(n_grid_points,)): The predicted standard deviations for `grid`.
+    mu (np.ndarray, shape(n_grid_points,)): The predicted mean values for `grid`.
+    sigma (np.ndarray, shape(n_grid_points,)): The predicted standard deviations for `grid`.
     
     (n_samples: The number of the observed data, n_grid_points: The number of query points for evaluation)
     """
